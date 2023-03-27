@@ -9,17 +9,15 @@
   <body>
     <a class = "skip" href="#skip">Skip to Main Content</a>
     <header>
-      <img src="images/logo.png" alt="" id = "logo">
       <nav>
         <ul class="nav_links">
-          <li class="nav_item"><a href="#pc">PC components guide</a></li>
           <li class="nav_item"><a href="#cpu">CPU</a></li>
           <li class="nav_item"><a href="#motherboard">Motherboard</a></li>
           <li class="nav_item"><a href="#gallery">Gallery</a></li>
         </ul>
     </nav>
   </header>
-  <main class="about" id="pc">
+  <main class="about" id="skip">
     <h1>PC components guide</h1>
 
     <p>This is a simple guide to get started with your first custom desktop PC build and the components you will need.</p>
@@ -28,11 +26,10 @@
       <div class="cpu">
           <header><h3>Central Processing Unit</h3></header>
           <ul>
-            <li><header><h4>"Pretty Cool" package</h4> </header></li>
             <li>The brain of your computer</li>
             <li>Intel or AMD for desktops</li>
           </ul>
-          <button>Go to CPU page</button>
+          <button id="cpuButton">Go to CPU page</button>
       </div>
     <h2 id = "motherboard">Motherboard</h2>
       <div class="motherboard">
@@ -40,11 +37,11 @@
           <ul>
             <li>A circuit board connecting all your components together</li>
           </ul>
-          <button>Go to motherboard page</button>
+          <button id="mbButton">Go to motherboard page</button>
       </div>
       <h2 id = "gallery">Gallery</h2>
         <div class="gallery"> 
-          <img id="da6" src="da6/sample.jpg" alt="da6" />
+          <img id="da6" src="images/da6.jpg" alt="da6" />
           <img id="north" src="images/fractalnorth.jpg" alt="north" />
           <img id="y40" src="images/hytey40.jpg" alt="y40" />
           <img id="y60" src="images/hytey60.jpg" alt="y60" />
@@ -55,5 +52,6 @@
           <img id="nr200" src="images/nr200.jpg" alt="nr200" />
         </div>
       </main>
+      <script src="js/main.js"></script>
   </body>
 </html>
