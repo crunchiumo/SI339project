@@ -1,0 +1,122 @@
+.cpu, .motherboard {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+
+  .about{
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+  }
+
+  p{
+    grid-column: 2 / 4;
+    grid-row: 1 / 1;
+  }
+
+  #cpu{
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+  }
+
+  .cpu{
+    background-color: black;
+    grid-column: 2 / 4;
+    grid-row: 2 / 2;
+  }
+
+  #motherboard{
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+  }
+
+  .motherboard{
+    background-color: black;
+    grid-column: 2 / 4;
+    grid-row: 3 / 3;
+  }
+
+  #intel{
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+  }
+
+  .intel{
+    grid-column: 2 / 4;
+    grid-row: 2 / 2;
+  }
+
+  #amd{
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+  }
+
+  .amd{
+    grid-column: 2 / 4;
+    grid-row: 3 / 3;
+  }
+
+  #maingallery{
+    grid-column: 1 / 1;
+    grid-row: 4 / 4;
+  }
+
+  .maingallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  #cpugallery{
+    grid-column: 1 / 1;
+    grid-row: 4 / 4;
+  }
+
+  .cpugallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #ff{
+    grid-column: 1 / 1;
+    grid-row: 4 / 4;
+  }
+
+  .ff{
+    grid-column: 2 / 4;
+    grid-row: 4 / 4;
+  }
+
+  #mbgallery{
+    grid-column: 1 / 1;
+    grid-row: 5 / 5;
+  }
+
+  .mbgallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Style for buttons */
+  button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+
