@@ -2,88 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Motherboard</title>
+    <title>Assembling your computer</title>
   </head>
   <body>
     <a class = "skip" href="#skip">Skip to Main Content</a>
     <header>
-        <button id="mainButton">Go to Main page</button>
+      <button id="mainButton">Go to Main page</button>
+      <button id="pcButton">Go to PC parts page</button>
+      <button id="buildButton">Go to Build Guide page</button>
       <nav>
         <ul class="nav_links">
           <li class="nav_item"><a href="#intel">Intel Motherboards</a></li>
           <li class="nav_item"><a href="#amd">AMD Motherboards</a></li>
           <li class="nav_item"><a href="#ff">Form Factor</a></li>
-          <li class="nav_item"><a href="#gallery">Gallery</a></li>
+          <li class="nav_item"><a href="#mbgallery">Gallery</a></li>
         </ul>
     </nav>
   </header>
   <main class="about" id="skip">
-    <h1>Motherboard</h1>
+    <h1>Assembling your computer</h1>
 
-    <p>A motherboard is a circuit board that connects all the components in your PC to each other</p>
+    <p>Once you have everything ready to go, it's time to actually start building your PC.</p>
 
-    <h2 id = "intel">Intel motherboards</h2>
-      <div class="intel">
-          <header><h3>Z790</h3></header>
-          <ul>
-            <li>Supports overclocking</li>
-            <li>These CPUs use the Z790/H770/B760 chipset motherboards</li>
-          </ul>
-          <header><h3>H770</h3></header>
-          <ul>
-            <li>No overclocking support</li>
-          </ul>
-          <header><h3>B760</h3></header>
-          <ul>
-            <li>No overclocking support</li>
-          </ul>
+    <h2 id = "inscpu"></h2>
+      <div class="inscpu">
+          <header><h3>Installing the CPU</h3></header>
+          <p>Start by unlocking the CPU bar. Then, open the CPU door, place the CPU in the right direction, close the door, and lock the bar down.</p>
+          <img id="cpuinstall" src="images/cpuinstall.jpeg" alt="cpuinstall" />
       </div>
-    <h2 id = "amd">AMD motherboards</h2>
-      <div class="amd">
-          <header><h3>X670E</h3></header>
-          <ul>
-            <li>Supports overclocking</li>
-            <li>Highest end</li>
-          </ul>
-          <header><h3>X670</h3></header>
-          <ul>
-            <li>Supports overclocking</li>
-            <li>high end</li>
-          </ul>
-          <header><h3>B650</h3></header>
-          <ul>
-            <li>supports overclocking</li>
-            <li>Entry level</li>
-          </ul>
+      
+    <h2 id = "insmem"></h2>
+      <div class="insmem">
+          <header><h3>Installing the RAM</h3></header>
+          <p>Start by pushing open the two tabs on either side of the RAM slot on the motherboard slot. Once the RAM module is lined up with the slot, simply push down until you hear a click, then make sure the tabs are closed.</p>
+          <img id="raminstall" src="images/raminstall.webp" alt="raminstall" />
       </div>
-      <h2 id = "ff">Form Factor</h2>
-      <div class="ff">
-        <img id="atx" src="images/atx.jpeg" alt="atx" />
-          <header><h3>ATX</h3></header>
-          <ul>
-            <li>Most common</li>
-          </ul>
-          <img id="msi" src="images/godlike.jpeg" alt="godlike" />
-          <img id="gigabyte" src="images/aorus.jpeg" alt="aorus" />
-          <img id="evga" src="images/classified.jpeg" alt="classified" />
-          <img id="asus" src="images/prime.png" alt="prime" />
-          <header><h3>MATX</h3></header>
-          <ul>
-            <li>Smaller</li>
-          </ul>
-          <img id="asus" src="images/matx.jpeg" alt="strix" />
-          <header><h3>ITX</h3></header>
-          <ul>
-            <li>Smallest</li>
-          </ul>
-          <img id="asus" src="images/strix.png" alt="strix" />
-      </div>  
-      <h2 id = "gallery">Gallery</h2>
-        <div class="gallery"> 
-          <img id="asus" src="images/crosshair.png" alt="crosshair" />
-          <img id="nzxt" src="images/n7.jpeg" alt="n7" />
+
+    <h2 id = "install"></h2>
+      <div class="install">
+          <header><h3>Installing the rest of your components</h3></header>
+          <p>Mount your motherboard into your case and screw it in.</p>
+          <p>Mount your CPU cooler onto your motherboard. If you are using a liquid cooler screw the radiator into the case.</p>
+          <p>Slot in your graphics card into the top PCIe slot on your motherboard and screw it into the case.</p>
+          <p>Install your power supply and its cables and wire up the main components.</p>
+          <img id="install" src="images/install.jpeg" alt="install" />
+      </div>
+
       </main>
       <script src="js/motherboard.js"></script>
   </body>
