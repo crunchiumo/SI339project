@@ -1,16 +1,38 @@
-/* .cpu, .motherboard {
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-  } */
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
 
+a.skip:focus{
+  top:20px;
+  color: white;
+  text-decoration-style: solid;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav_links{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 
   .gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
   }
+
 
 
 img {
@@ -20,22 +42,43 @@ img {
   
   /* Style for buttons */
   button {
+    display: flex;
     background-color: #333;
     color: white;
     border: none;
     cursor: pointer;
-    padding: 10px 20px;
-    margin-top: 10px;
+    padding: 10px;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
   }
   
   button:hover {
     background-color: #555;
   }
-  
+
+    .nav_item{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
 
       /* Responsive media query */
       @media screen and (min-width: 768px) and (max-width: 1024px) { 
-    
+        header{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: stretch;
+        }
+        
+        .nav_links{
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+        }
+
         .nav_item {
           margin-bottom: 10px;
         }
@@ -51,16 +94,146 @@ img {
     
     /* Responsive design for larger screens */
     @media screen and (min-width: 1025px) {
-  
+      
+      header{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background-color: black;
+        height: 100px;
+      }
+      
+      .nav_links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: row;
+        overflow-y: scroll;
+      }
+
+      button{
+        width: fit-content;
+      }
+
       .nav_item {
           margin-bottom: 10px;
       }
     
       main{
-          flex-direction: column;
+          grid-template-columns: 2fr 3fr;
+          justify-items: start;
+          align-items: start;
         }
     
-        .gallery {
+        #gallery {
           flex-direction: column;
         }
+
+        body > header{
+          position: sticky;
+          top:0;
+          width: 100%;
+          z-index: 1;
+      }
+
+      h1{
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+      }
+
+      #first,#second{
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+      }
+
+      #pc,#cpu,#inscpu{
+        grid-column: 1 / 1;
+        grid-row: 2 / 2;
+      }
+
+      .pc,.cpu,.inscpu{
+        grid-column: 2 / 2;
+        grid-row: 2 / 2;
+      }
+
+      #gallery,#mb,#insmem{
+        grid-column: 1 / 1;
+        grid-row: 3 / 3;
+      }
+
+      #desc,.mb,.insmem{
+        grid-column: 2 / 2;
+        grid-row: 3 / 3;
+      }
+
+      #gpu,#install{
+        grid-column: 1 / 1;
+        grid-row: 4 / 4;
+      }
+
+      .maingallery,.gpu,.install{
+        grid-column: 2 / 2;
+        grid-row: 4 / 4;
+      }
+
+      #ram{
+        grid-column: 1 / 1;
+        grid-row: 5 / 5;
+      }
+
+      .ram{
+        grid-column: 2 / 2;
+        grid-row: 5 / 5;
+      }
+
+      #gb{
+        grid-column: 1 / 1;
+        grid-row: 6 / 6;
+      }
+
+      .gb{
+        grid-column: 2 / 2;
+        grid-row: 6 / 6;
+      }
+
+      #case{
+        grid-column: 1 / 1;
+        grid-row: 7 / 7;
+      }
+
+      .case{
+        grid-column: 2 / 2;
+        grid-row: 7 / 7;
+      }
+
+      #psu{
+        grid-column: 1 / 1;
+        grid-row: 8 / 8;
+      }
+
+      .psu{
+        grid-column: 2 / 2;
+        grid-row: 8 / 8;
+      }
+
+      #fan{
+        grid-column: 1 / 1;
+        grid-row: 9 / 9;
+      }
+
+      .fan{
+        grid-column: 2 / 2;
+        grid-row: 10 / 10;
+      }
+
+      #os{
+        grid-column: 1 / 1;
+        grid-row: 11 / 11;
+      }
+
+      .os{
+        grid-column: 2 / 2;
+        grid-row: 11 / 11;
+      }
+
     }

@@ -15,6 +15,7 @@
       <button id="buildButton">Go to Build Guide page</button>
       <nav>
         <ul class="nav_links">
+          <li class="nav_item"><a href="#skip">Jump to Content</a></li>
           <li class="nav_item"><a href="#inscpu">Installing your CPU</a></li>
           <li class="nav_item"><a href="#insmem">Installing your RAM</a></li>
           <li class="nav_item"><a href="#install">Installing the rest of your components</a></li>
@@ -22,27 +23,27 @@
     </nav>
   </header>
   <main class="skip" id="skip">
-    <h1>Assembling your computer</h1>
+    <h1><a href="https://pcpartpicker.com/guide/">Assembling your computer</a></h1>
 
-    <p>Once you have everything ready to go, it's time to actually start building your PC.</p>
+    <p id = "second">Once you have everything ready to go, it's time to start building your PC.</p>
 
-    <h2 id = "inscpu"></h2>
+    <h2 id = "inscpu">Processor (CPU)</h2>
       <div class="inscpu">
-          <header><h3>Installing the CPU</h3></header>
+          <h3>Installing the CPU</h3>
           <p>Start by unlocking the CPU bar. Then, open the CPU door, place the CPU in the right direction, close the door, and lock the bar down.</p>
           <img id="cpuinstall" src="images/cpuinstall.jpeg" alt="cpuinstall" />
       </div>
       
-    <h2 id = "insmem"></h2>
+    <h2 id = "insmem">System memory (RAM)</h2>
       <div class="insmem">
-          <header><h3>Installing the RAM</h3></header>
+          <h3>Installing the RAM</h3>
           <p>Start by pushing open the two tabs on either side of the RAM slot on the motherboard slot. Once the RAM module is lined up with the slot, simply push down until you hear a click, then make sure the tabs are closed.</p>
           <img id="raminstall" src="images/raminstall.webp" alt="raminstall" />
       </div>
 
-    <h2 id = "install"></h2>
+    <h2 id = "install">Other components</h2>
       <div class="install">
-          <header><h3>Installing the rest of your components</h3></header>
+          <h3>Installing the rest of your components</h3>
           <p>Mount your motherboard into your case and screw it in.</p>
           <p>Mount your CPU cooler onto your motherboard. If you are using a liquid cooler screw the radiator into the case.</p>
           <p>Slot in your graphics card into the top PCIe slot on your motherboard and screw it into the case.</p>
@@ -51,6 +52,10 @@
       </div>
 
       </main>
+
+      <footer>
+        <p>Brandon Goh SI 339<p>
+      </footer>
       <script src="js/motherboard.js"></script>
   </body>
 </html>
